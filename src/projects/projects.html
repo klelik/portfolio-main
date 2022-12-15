@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KLement's Personal Portfolio</title>
-    <link rel="stylesheet" href="./style.css" type="text/css" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <script
-      src="https://kit.fontawesome.com/23ec1d83f3.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body class="bg-white text-white dark:bg-blue-dark dark:text-black">
-    <div class="main" id="particles-js"></div>
-    <div class="flex flex-col justify-between items-center z-1 gap-8">
-      <div
-        class="container sm:xl flex items-center align-middle justify-center m-auto flex-col"
-      >
-        <p class="name animate__animated animate__flipInX delay-1 font-bold">Projects</p>
-        <p class="description animate__animated animate__flipInX delay-2">Front-End Developer</p>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./projects.css" type="text/css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"><link href="" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
  
-      </div>
-    </div>
+  <div class="main-container">
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <p> <span>Klement</span></p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/src/index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div>
+            <h2>Title 1</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum mollitia suscipit rem enim ullam fuga eos doloremque corrupti quasi quia, non eligendi? Veritatis, saepe. Necessitatibus voluptatem adipisci deleniti doloribus.
+            </p>
+        </div>
 
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-  </body>
+        <span>
+            <img class="main-img" height="100px" src="assets/big_ben-2-removebg.png">
+    </span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quisquam necessitatibus, laborum iste exercitationem ex excepturi totam quae ea inventore quibusdam atque quasi dolorum, officiis expedita earum impedit eaque placeat?
+        </p>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".menu-icon").on("click", function(){
+            $("nav ul").toggleClass("active");
+        })
+    });
+
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('nav-bg');
+        }
+        else{
+            $('nav').removeClass('nav-bg');
+        }
+    });
+</script>
+
+</body>
 </html>

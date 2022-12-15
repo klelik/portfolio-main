@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  background-image: url('/src/projects/Paper-bckg.png');
+
+}
 
 p.name {
   font-family: "Ubuntu", sans-serif;
