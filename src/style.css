@@ -116,3 +116,16 @@ a:hover:after {
     font-size: 13px;
   }
 }
+
+.delay-1 {
+  animation-delay: .25s;
+  }
+  .delay-2 {
+  animation-delay: .5s;
+  }
+  .delay-3 {
+  animation-delay: .75s;
+  }
+  .delay-4 {
+  animation-delay: 1s;
+  }
