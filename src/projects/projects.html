@@ -16,11 +16,8 @@
   <div class="main-container">
     <header>
         <nav>
-            <div class="menu-icon">
-                <i class="fa fa-bars"></i>
-            </div>
             <div class="logo">
-                <p> <span>Klement</span></p>
+                 <span id="date">Klement</span>
             </div>
             <div class="menu">
                 <ul>
@@ -33,6 +30,10 @@
         </nav>
     </header>
     <div class="content">
+        <div class="circle"></div>
+        <div class="circle-yellow"></div>
+        <div class=""> <img class="coffee" src="/src/projects/assets/coffee.png"> </div>
+        <div class=""> <img class="html-cirle" src="/src/projects/assets/html-circle.png"> </div>
         <div>
             <h2>Title 1</h2>
             <p>
@@ -42,29 +43,13 @@
 
         <span>
             <img class="main-img" height="100px" src="assets/big_ben-2-removebg.png">
-    </span>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quisquam necessitatibus, laborum iste exercitationem ex excepturi totam quae ea inventore quibusdam atque quasi dolorum, officiis expedita earum impedit eaque placeat?
-        </p>
-    </div>
+        </span>
+            <p >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum mollitia suscipit rem enim ullam fuga eos doloremque corrupti quasi quia, non eligendi? Veritatis, saepe. Necessitatibus voluptatem adipisci deleniti doloribus.
+            </p>
 </div>
 
-<script>
-    $(document).ready(function(){
-        $(".menu-icon").on("click", function(){
-            $("nav ul").toggleClass("active");
-        })
-    });
-
-    $(window).on("scroll", function(){
-        if($(window).scrollTop()){
-            $('nav').addClass('nav-bg');
-        }
-        else{
-            $('nav').removeClass('nav-bg');
-        }
-    });
-</script>
+<script language="JavaScript" type="text/javascript" src="project.js"></script>
 
 </body>
 </html>
