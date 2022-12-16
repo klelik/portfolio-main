@@ -4,6 +4,14 @@ var prnDt =  new Date().toLocaleTimeString('en-us', options);
 const dateElement = document.getElementsById("date")
 dateElement.textContent = "test";
 
+//parallax
+window.addEventListener("scroll", function() {
+    const distance = window.scrollY;
+    document.querySelector(".head").style.transform = `translateY(${distance *
+      1}px)`;
+    document.querySelector(
+      ".parallax"
+    ).style.transform = `translateY(${distance * 0.1}px)`;
 
 
     $(document).ready(function(){

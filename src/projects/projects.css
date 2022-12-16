@@ -1,11 +1,15 @@
-* {
-  cursor: 
-    url(/src/projects/assets/sketch-coursor-final.png), auto;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');* {
+  cursor: url(/src/projects/assets/sketch-coursor-final.png), auto;
+  font-family: "Merriweather", serif;
+  font-size: 1.168vw;
+  letter-spacing: 0.05rem;
 }
 
 body {
   background-image: url("Paper-bckg.png");
   font-family: "Merriweather", serif;
+  color: #333;
+
 }
 
 .wrapper {
@@ -21,7 +25,6 @@ body {
   justify-content: space-between;
 }
 
-
 .menu {
   margin-right: 0;
 }
@@ -32,7 +35,85 @@ h2 {
   letter-spacing: 0.15rem;
   color: #ec8c60;
 }
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  cursor: url(assets/hover-cursor.png), url(/assets/images/original/hover.png),
+    pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
 
+  }
+  
+  .topnav a:hover{
+color: #ec8c60;
+  }
+  .topnav a.active:hover{
+    color: #ec8c60;
+
+  }
+  
+  .topnav a.active {
+    color: black;
+    float: left;
+    text-decoration: none;
+  }
+
+.topnav a:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 13px;
+    background-color: 
+  #ec8c60;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .topnav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/* 
 header {
   width: 100%;
   background-size: cover;
@@ -40,34 +121,31 @@ header {
 }
 
 nav {
-  position: sticky;
-  width: 100%;
-  line-height: 20px;
+  justify-content: flex-end;
+  line-height: 23px;
   color: #000;
 }
 
 nav ul {
   list-style: none;
-  background: rgba(0, 0, 0, 0);
   overflow: hidden;
-  padding: 0;
-  margin: 0;
+
   text-align: right;
-  padding-right: 40px;
 }
 
 nav ul li {
   display: inline-block;
   padding: 16px 10px;
-
 }
-
 nav ul li a {
   color: #000;
+  letter-spacing: 0.05rem;
   text-decoration: none;
-  font-size: 14px;
-  cursor: pointer;
-
+  font-size: 20px;
+  text-decoration: underline;
+  cursor: url(assets/hover-cursor.png), url(/assets/images/original/hover.png),
+    pointer;
+  position: relative;
 }
 
 .logo {
@@ -108,7 +186,7 @@ nav ul li a {
   .active {
     max-height: 550px;
   }
-}
+} */
 
 .main-img {
   position: absolute;
@@ -120,14 +198,11 @@ nav ul li a {
   height: auto;
 }
 .content {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row nowrap;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
   height: 100%;
   padding: 15px;
@@ -140,15 +215,32 @@ nav ul li a {
   z-index: -1;
   overflow: hidden;
 }
-p {
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+/* p {
 
   word-wrap: break-word;
   max-width: 40%;
   max-height: 60vh;
   font-size: 3vh;
   overflow: hidden;
-}
-
+} */
+/* 
 @media screen and (max-width: 700px) {
   p.content {
     font-size: 2.5vh;
@@ -166,6 +258,22 @@ p {
     font-size: 2rem;
     z-index: 1;
   }
+} */
+main [class^="circle"] {
+    background-image: url(assets/transparent.png);
+}
+.name{
+    position: absolute;
+    left: 20%;
+    top: 9.72rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 8.3rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    z-index: 2;
+    opacity: 0.9;
+
+    
 }
 
 .circle{
@@ -174,7 +282,7 @@ p {
     margin-right: 50%;
     width: 20.9rem;
     height: 20.9rem;
-    background-color: #F6CB1D;
+    background-color: #C75146;
     position: absolute;
     border-radius: 50%;
     z-index: -2;
@@ -184,15 +292,15 @@ p {
     margin-left: auto;
     left: 0;
     margin-left: 53%;
-    top: 12.rem;
+    top: 30rem;
     width: 16.73rem;
     height: 16.73rem;
     background-color: #F6CB1D;
     position: absolute;
     border-radius: 50%;
     z-index: -2;
-}
-.coffee{
+} 
+/* .coffee{
     height: auto; 
     width: auto; 
     max-width: 300px; 
@@ -215,4 +323,4 @@ p {
     margin-left: 53%;
     top: 12.9rem;
     z-index: -1;
-}
+} */
