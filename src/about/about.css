@@ -141,3 +141,26 @@ body {
     text-align: left;
   }
 }
+.topnav div.active p {
+  font-size: 1.168vw;
+  font-weight: 700;
+}
+
+.delay-1 {
+  animation-delay: 0.25s;
+}
+.delay-2 {
+  animation-delay: 0.5s;
+}
+.delay-3 {
+  animation-delay: 0.75s;
+}
+.delay-4 {
+  animation-delay: 1s;
+}
+.delay-5 {
+  animation-delay: 1.25s;
+}
+.delay-6 {
+  animation-delay: 1.5s;
+}

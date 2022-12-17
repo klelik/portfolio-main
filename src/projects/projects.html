@@ -8,16 +8,27 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"><link href="" rel="stylesheet" />
-  <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+<title>About</title>
 </head>
 <body>
  
   <div class="main-container">
     <!-- navbar -->
     <nav class="topnav" id="myTopnav">
-        <a href="http://127.0.0.1:5500/src/index.html" class="active">Home</a>
-        <a href="">Contact</a>
+        <div class="active">
+            <a href="http://127.0.0.1:5500/src/index.html" >Home</a>
+            <p id="date">date</p>
+        </div>
+
+        <a href = "mailto:klelika1998@gmail.com?subject=Contact&body=Hi Klement, ">Contact</a>
         <a href="http://127.0.0.1:5500/src/about/about.html">Projects</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -27,24 +38,24 @@
     <main class="content">
         <div class="head">
             <div class="parallax">
-                <div class="circle"></div>
-                <div class="circle-yellow"></div>
+                <div class="circle animate__animated animate__animated animate__bounceInLeft delay-2" id="red"></div>
+                <div class="circle-yellow animate__animated animate__animated animate__bounceInRight delay-1" id="yellow"></div>
                 <!-- <div class=""> <img class="coffee" src="/src/projects/assets/coffee.png"> </div>
                 <div class=""> <img class="html-cirle" src="/src/projects/assets/html-circle.png"> </div> -->
            </div>
         </div>
-        <div class="name" style="transform: translate(0px, 0px);">Klement's Space</div>
-        <div class="div1">
+        <div class="name animate__animated animate__animated animate__fadeIn delay-6" style="transform: translate(0px, 0px);">Klement's Space</div>
+        <div class="div1 animate__animated animate__animated animate__fadeIn delay-2">
             <h2>Title 1</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum mollitia suscipit rem enim ullam fuga eos doloremque corrupti quasi quia, non eligendi? Veritatis, saepe. Necessitatibus voluptatem adipisci deleniti doloribus.
             </p>
         </div>
 
-        <span class="div2">
+        <span class="div2 animate__animated animate__animated animate__slideInUp ">
             <img class="main-img" height="100px" src="assets/big_ben-2-removebg.png">
         </span>
-        <div class="div3">
+        <div class="div3 animate__animated animate__animated animate__fadeIn delay-2">
             <h2>Title 2</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum mollitia suscipit rem enim ullam fuga eos doloremque corrupti quasi quia, non eligendi? Veritatis, saepe. Necessitatibus voluptatem adipisci deleniti doloribus.
