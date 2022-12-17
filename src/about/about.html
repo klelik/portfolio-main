@@ -1,199 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
-      rel="stylesheet"
-    />
-    <link href="" rel="stylesheet" />
-
-    <link rel="stylesheet" href="./about.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="/src/projects/projects.css" type="text/css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Projects</title>
-  </head>
-  <body>
-    <header>
-      <nav class="topnav" id="myTopnav">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./about.css" type="text/css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"><link href="" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+<title>About</title>
+</head>
+<body>
+ 
+  <div class="main-container">
+    <!-- navbar -->
+    <nav class="topnav" id="myTopnav">
         <div class="active">
-          <a href="/index.html" class="">Home</a>
-          <p id="date">Monday 23 December</p>
+            <a href="/index.html" >Home</a>
+            <p id="date">date</p>
         </div>
-        <a href="mailto:klelika1998@gmail.com?subject=Contact&body=Hi Klement, "
-          >Contact</a
-        >
-        <a href="/src/projects/projects.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-    </header>
-    <main>
-      <section
-        class="portfolio animate__animated animate__animated animate__fadeIn delay-1 m-auto mt-20 w-[90%]"
-        id="portfolio"
-      >
-        <h1
-          class="text-3xl ml-[6%] mb-10 font-bold before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#ec8c60] relative inline-block animate__animated animate__animated animate__jackInTheBox delay-1"
-        >
-          <span class="relative text-white">Projects</span>
-        </h1>
 
-        <div
-          class="image-container animate__animated animate__animated animate__fadeIn delay-2"
-        >
-          <div
-            class="box bg-white flex flex-col justify-center items-center gap-5 transform transition duration-500 hover:scale-110"
-          >
-            <img
-              class="transform hover:rotate-180 transition duration-500 ease-in-out p-1 bg-white border rounded max-w-sm"
-              src="assets/1-proj.png"
-              alt=""
-            />
-            <div class="info">
-              <h3>CALCULATOR</h3>
-            </div>
-            <div class="text-center w-[60%]">
-              <p>
-                Lorem ipsum, dolor sit aque alias quia doloremque eos laboriotis
-                incidunt quaerat, molestias eum.
-              </p>
-            </div>
-            <div>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-            </div>
-          </div>
-          <div
-            class="box bg-white flex flex-col justify-center items-center gap-5 transform transition duration-500 hover:scale-110 animate__animated animate__animated animate__fadeIn delay-2"
-          >
-            <img
-              class="rounded-full transition duration-500 ease-in-out hover:skew-y-12"
-              src="assets/1-proj.png"
-              alt=""
-            />
-            <div class="info">
-              <h3>CALCULATOR</h3>
-            </div>
-            <div class="text-center w-[60%]">
-              <p>
-                Lorem ipsum, dolor sit aque alias quia doloremque eos laboriotis
-                incidunt quaerat, molestias eum.
-              </p>
-            </div>
-            <div>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-            </div>
-          </div>
-          <div
-            class="box bg-white flex flex-col justify-center items-center gap-5 transform transition duration-500 hover:scale-110 animate__animated animate__animated animate__fadeIn delay-3"
-          >
-            <img class="rounded-full" src="assets/1-proj.png" alt="" />
-            <div class="info">
-              <h3>CALCULATOR</h3>
-            </div>
-            <div class="text-center w-[60%]">
-              <p>
-                Lorem ipsum, dolor sit aque alias quia doloremque eos laboriotis
-                incidunt quaerat, molestias eum.
-              </p>
-            </div>
-            <div>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-            </div>
-          </div>
-          <div
-            class="box bg-white flex flex-col justify-center items-center gap-5 transform transition duration-500 hover:scale-110 animate__animated animate__animated animate__fadeIn delay-4"
-          >
-            <img class="rounded-full" src="assets/1-proj.png" alt="" />
-            <div class="info">
-              <h3>CALCULATOR</h3>
-            </div>
-            <div class="text-center w-[60%]">
-              <p>
-                Lorem ipsum, dolor sit aque alias quia doloremque eos laboriotis
-                incidunt quaerat, molestias eum.
-              </p>
-            </div>
-            <div>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-            </div>
-          </div>
-          <div
-            class="box bg-white flex flex-col justify-center items-center gap-5 transform transition duration-500 hover:scale-110"
-          >
-            <img class="rounded-full" src="assets/1-proj.png" alt="" />
-            <div class="info">
-              <h3>CALCULATOR</h3>
-            </div>
-            <div class="text-center w-[60%]">
-              <p>
-                Lorem ipsum, dolor sit aque alias quia doloremque eos laboriotis
-                incidunt quaerat, molestias eum.
-              </p>
-            </div>
-            <div>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-              <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Preview
-              </button>
-            </div>
-          </div>
+        <a href = "mailto:klelika1998@gmail.com?subject=Contact&body=Hi Klement, ">Contact</a>
+        <a href="/src/projects/projects.html">Projects</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars">///</i>
+        </a>
+    </nav>
+    <!--end navbar -->
+
+    <section class="content">
+        <article class="head">
+            <div class="parallax">
+                <div class="circle animate__animated animate__animated animate__bounceInLeft delay-2" id="red"></div>
+                <div class="circle-yellow animate__animated  animate__bounceInRight delay-1" id="yellow"></div>
+                <!-- <div class=""> <img class="coffee" src="/src/projects/assets/coffee.png"> </div>
+                <div class=""> <img class="html-cirle" src="/src/projects/assets/html-circle.png"> </div> -->
+           </div>
+          </article>
+        <div class="name animate__animated  animate__fadeIn delay-6" style="transform: translate(0px, 0px);">Klement's Space</div>
+        <div class="div1 animate__animated  animate__fadeIn delay-2">
+            <h2>Design</h2>
+            <p>
+              Design-oriented programming is a way to author computer applications using a combination of text, graphics, and style elements in a unified code-space. The best products do two things well: features and details. Features are what draw people to your product. Details are what keep them there.
+
+
+
+            </p>
+        </div>
+
+        <span class="div2 animate__animated  animate__slideInUp ">
+            <img class="main-img" height="100px" src="assets/big_ben-2-removebg.png">
+        </span>
+        <div class="div3 animate__animated  animate__fadeIn delay-2">
+            <h2>Title 2</h2>
+            <p>
+              "In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them."           </p>
         </div>
       </section>
-    </main>
-  </body>
-  <script
-    language="JavaScript"
-    type="text/javascript"
-    src="/src/projects/project.js"
-  ></script>
+        <!-- end first section-->
+
+        <!-- start second section-->
+          <section class="content">
+            <div>
+              <h2>second</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam blanditiis exercitationem placeat labore, repudiandae reprehenderit asperiores aliquam beatae unde quisquam doloremque earum, excepturi iure aliquid perspiciatis nobis tempora voluptatem tenetur?</p>
+            </div>
+          </section>
+        <!-- end second section-->
+
+        <!--  third section-->
+    <section class="next animate__animated  animate__fadeIn ">
+        <div id="container">
+
+            <div class="head-wrapp">
+              <h3>&bull; Keep in Touch &bull;</h3>
+              <div class="underline"></div>
+            </div>
+            <form action="#" method="post" id="contact_form">
+              <div class="name-email">
+                <label for="name-email"></label>
+                <input type="text" placeholder="My name is" name="name" id="name_input" required>
+              </div>
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+              </div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="I'd like to contact you about" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit ">
+                <a><span type="submit" value="Send Message" id="">Send </span></a>
+              </div>
+
+            </form><!-- // End form -->
+          </div><!-- // End #container -->
+    </section>
+        <!-- end third section-->
+
+  </div>
+
+<script language="JavaScript" type="text/javascript" src="about.js"></script>
+
+</body>
 </html>

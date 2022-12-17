@@ -2,10 +2,16 @@
   margin: 0px;
   padding: 0px;
   cursor: 
-  url(/src/projects/assets/sketch-coursor-final.png), auto;
+  url(/src/about/assets/sketch-coursor-final.png), auto;
 }
 body{
-  background-image: url('/src/projects/Paper-bckg.png');
+  background-image: url('/src/about/Paper-bckg.png');
+}
+
+main{
+ 
+}
+.cont{
 
 }
 
@@ -39,12 +45,6 @@ nav {
   top: 8vh;
 }
 
-.ulsocial {
-  margin: 0px;
-  padding: 0px;
-  font-size: 0px;
-  text-align: center;
-}
 
 .social {
   padding-left: 15px;
@@ -92,7 +92,8 @@ a {
 a span {
   position: relative;
   z-index: 2;
-  cursor:pointer;
+  cursor: url(/src/about/assets/hover-cursor.png), url(/src/about/assets/hover-cursor.png),
+  pointer;
 
 }
 

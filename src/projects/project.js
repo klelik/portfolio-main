@@ -1,42 +1,105 @@
-var options = {  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
-var prnDt =  new Date().toLocaleTimeString('en-us', options);
+const projectsData = [
+  {
+    id: 1,
+    title: "Weather Widget",
+    description: "Weather Widget",
+    img: "-proj.png",
+    git: "https://github.com/klelik/weather-app",
+    deploy: "https://github.com/klelik/weather-app",
+  },
+  {
+    id: 2,
+    title: "Calculator2",
+    description: "Calculator in Vanilla Javascript",
+    img: "-proj.png",
+    git: "https://github.com/klelik/weather-app",
 
-const dateElement = document.getElementById("date")
-const redCircle = document.getElementsByClassName("circle")
-const yellowCircle = document.getElementsByClassName("circle-yellow")
-const red = document.getElementById("red")
-const yellow = document.getElementById("yellow")
-dateElement.textContent ="-"+ prnDt.slice(0,21)+"th-";
+    deploy: "https://github.com/klelik/weather-app",
+  },
+  {
+    id: 2,
+    title: "Calculator3",
+    description: "Calculator in Vanilla Javascript",
+    img: "-proj.png",
+    git: "https://github.com/klelik/weather-app",
 
-//parallax
+    deploy: "https://github.com/klelik/weather-app",
+  },
+  {
+    id: 3,
+    title: "Calculator",
+    description: "Calculator in Vanilla Javascript",
+    img: "-proj.png",
+    git: "https://github.com/klelik/weather-app",
 
-window.addEventListener('scroll',function() {
-    let value = window.scrollY;
-    red.style.top = 80 + value * 0.35 + 'px';
-    yellow.style.top = 470 + value * 0.75 + 'px';
-    yellow.style.left =  + value * 0.35 + 'px';
-})
+    deploy: "https://github.com/klelik/weather-app",
+  },
+  {
+    id: 4,
+    title: "Calculator",
+    description: "Calculator in Vanilla Javascript",
+    img: "-proj.png",
+    git: "https://github.com/klelik/weather-app",
 
-// window.addEventListener("scroll", function() {
-//     const distance = window.scrollY;
-//     document.querySelector(".head").style.transform = `translateY(${distance *
-//       1}px)`;
-//     document.querySelector(
-//       ".parallax"
-//     ).style.transform = `translateY(${distance * 0.1}px)`;
+    deploy: "https://github.com/klelik/weather-app",
+  },
+  {
+    id: 5,
+    title: "Calculator",
+    description: "Calculator in Vanilla Javascript",
+    img: "-proj.png",
+    git: "https://github.com/klelik/weather-app",
 
+    deploy: "https://github.com/klelik/weather-app",
+  },
+  {
+    id: 6,
+    title: "Calculator",
+    description: "Calculator in Vanilla Javascript",
+    img: "-proj.png",
+    git: "https://github.com/klelik/weather-app",
 
-//     $(document).ready(function(){
-//         $(".menu-icon").on("click", function(){
-//             $("nav ul").toggleClass("active");
-//         })
-//     });
+    deploy: "https://github.com/klelik/weather-app",
+  },
+];
 
-//     $(window).on("scroll", function(){
-//         if($(window).scrollTop()){
-//             $('nav').addClass('nav-bg');
-//         }
-//         else{
-//             $('nav').removeClass('nav-bg');
-//         }
-//     });
+const contentBox = document.getElementById("dataContainer");
+const dataBox = document.querySelector(".image-container");
+console.log(contentBox);
+console.log(dataBox);
+
+const showData = projectsData.map((project, index) => {
+  return `
+    <div
+    class="box bg-white flex flex-col justify-center items-center gap-5 transform transition duration-500 hover:scale-110 animate__animated animate__animated animate__fadeIn delay-3"
+  >
+    <img class="rounded-full" src="assets/${project.id}${project.img}" alt="" />
+    <div class="info">
+      <h3>${project.title}</h3>
+    </div>
+    <div class="text-center w-[60%]">
+      <p>
+        Lorem ipsum, dolor sit aque alias quia doloremque eos laboriotis
+        incidunt quaerat, molestias eum.
+      </p>
+    </div>
+    <div>
+    <a href = "${project.git}" >      <button
+    class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  >
+    Github
+  </button></a>
+    <a href = "${project.git}" >      <button
+    class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  >
+    Preview
+  </button></a>
+
+    </div>
+  </div>
+
+    `;
+});
+console.log(showData);
+
+contentBox.innerHTML = showData.join("");

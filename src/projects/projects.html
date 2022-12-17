@@ -1,101 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./projects.css" type="text/css" />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"><link href="" rel="stylesheet" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
-<title>About</title>
-</head>
-<body>
- 
-  <div class="main-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link href="" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./projects.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="/src/projects/projects.css" type="text/css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="main-container">
     <!-- navbar -->
     <nav class="topnav" id="myTopnav">
-        <div class="active">
-            <a href="/index.html" >Home</a>
-            <p id="date">date</p>
-        </div>
+      <div class="active">
+          <a href="/index.html" >Home</a>
+          <p id="date">date</p>
+      </div>
 
-        <a href = "mailto:klelika1998@gmail.com?subject=Contact&body=Hi Klement, ">Contact</a>
-        <a href="http://127.0.0.1:5500/src/about/about.html">Projects</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+      <a href = "mailto:klelika1998@gmail.com?subject=Contact&body=Hi Klement, ">Contact</a>
+      <a href="/src/about/about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars">///</i>
+      </a>
+  </nav>
+  <!--end navbar -->
+    <main>
+      <section
+        class="portfolio animate__animated animate__animated animate__fadeIn delay-1 m-auto mt-20 w-[90%]"
+        id="portfolio"
+      >
+        <h1
+          class="text-3xl ml-[6%] mb-10 font-bold before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#ec8c60] relative inline-block animate__animated animate__animated animate__jackInTheBox delay-1"
+        >
+          <span class="relative text-white">Projects</span>
+        </h1>
 
-    <main class="content">
-        <div class="head">
-            <div class="parallax">
-                <div class="circle animate__animated animate__animated animate__bounceInLeft delay-2" id="red"></div>
-                <div class="circle-yellow animate__animated animate__animated animate__bounceInRight delay-1" id="yellow"></div>
-                <!-- <div class=""> <img class="coffee" src="/src/projects/assets/coffee.png"> </div>
-                <div class=""> <img class="html-cirle" src="/src/projects/assets/html-circle.png"> </div> -->
-           </div>
+        <div
+        id="dataContainer"
+          class="image-container animate__animated animate__animated animate__fadeIn delay-2"
+        >
+        <!-- Projects go here -->
         </div>
-        <div class="name animate__animated animate__animated animate__fadeIn delay-6" style="transform: translate(0px, 0px);">Klement's Space</div>
-        <div class="div1 animate__animated animate__animated animate__fadeIn delay-2">
-            <h2>Title 1</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum mollitia suscipit rem enim ullam fuga eos doloremque corrupti quasi quia, non eligendi? Veritatis, saepe. Necessitatibus voluptatem adipisci deleniti doloribus.
-            </p>
-        </div>
-
-        <span class="div2 animate__animated animate__animated animate__slideInUp ">
-            <img class="main-img" height="100px" src="assets/big_ben-2-removebg.png">
-        </span>
-        <div class="div3 animate__animated animate__animated animate__fadeIn delay-2">
-            <h2>Title 2</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illum mollitia suscipit rem enim ullam fuga eos doloremque corrupti quasi quia, non eligendi? Veritatis, saepe. Necessitatibus voluptatem adipisci deleniti doloribus.
-            </p>
-        </div>
+      </section>
     </main>
-    <div class="next">
-        <div id="container">
-            <h1>&bull; Keep in Touch &bull;</h1>
-            <div class="underline">
-            </div>
-            <div class="icon_wrapper">
-
-            </div>
-            <form action="#" method="post" id="contact_form">
-              <div class="name-email">
-                <label for="name-email"></label>
-                <input type="text" placeholder="My name is" name="name" id="name_input" required>
-              </div>
-              <div class="email">
-                <label for="email"></label>
-                <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
-              </div>
-              <div class="message">
-                <label for="message"></label>
-                <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
-              </div>
-              <div class="submit">
-                <input type="submit" value="Send Message" id="form_button" />
-              </div>
-            </form><!-- // End form -->
-          </div><!-- // End #container -->
-    </div>
   </div>
-
-<script language="JavaScript" type="text/javascript" src="project.js"></script>
-
-</body>
+  </body>
+  <script
+    language="JavaScript"
+    type="text/javascript"
+    src="project.js"
+  ></script>
+  <script
+    language="JavaScript"
+    type="text/javascript"
+    src="/src/about/about.js"
+  ></script>
 </html>
