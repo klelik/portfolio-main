@@ -8,12 +8,10 @@ body{
   background-image: url('/src/about/Paper-bckg.png');
 }
 
-main{
- 
+.content{
+  margin-top: 10%;
 }
-.cont{
 
-}
 
 p.name {
   font-family: "Ubuntu", sans-serif;
@@ -29,7 +27,6 @@ p.name {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  z-index: -1;
   min-height: 100vh;
 }
 
@@ -53,7 +50,7 @@ nav {
 }
 
 
-/*
+
 .fab {
   color: white;
   opacity: 0.5;
@@ -66,7 +63,15 @@ nav {
 }
 
 body {
-} */
+} 
+main{
+height: 100vh;
+}
+.boxer{
+  height: 35%;
+}
+
+
 
 .wrapper {
   transform: translate(-50%, -50%);
