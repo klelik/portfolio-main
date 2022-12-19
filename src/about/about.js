@@ -39,3 +39,35 @@ window.addEventListener('scroll',function() {
 //             $('nav').removeClass('nav-bg');
 //         }
 //     });
+
+
+
+
+
+// const navbar = document.querySelector('.navbar');
+// const burgerMenu = document.querySelector('.burger-menu');
+// const popupMenu = document.querySelector('.popup-menu');
+
+// navbar.addEventListener('mouseenter', () => {
+//   navbar.classList.add('navbar-highlight');
+// });
+
+// navbar.addEventListener('mouseleave', () => {
+//   navbar.classList.remove('navbar-highlight');
+// });
+
+// burgerMenu.addEventListener('click', () => {
+//   popupMenu.classList.toggle('popup-menu-open');
+// });
+
+// const navbarLinks = document.querySelectorAll('.navbar-link');
+
+// navbarLinks.forEach((link) => {
+//   link.addEventListener('click', () => {
+//     navbarLinks.forEach((otherLink) => {
+//       otherLink.classList.remove('navbar-link-active');
+//     });
+//     link.classList.add('navbar-link-active');
+//     popupMenu.classList.remove('popup-menu-open');
+//   });
+// });

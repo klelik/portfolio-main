@@ -1,53 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 * {
   cursor: url(/src/about/assets/sketch-coursor-final.png), auto;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   letter-spacing: 0.05rem;
-  font-size: 1.168vw;
+  
 }
 body {
   background-image: url("/src/about/Paper-bckg.png");
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   color: #333;
-  padding: 2.18rem 1.6rem;
+  padding: 48.888px 35.811px ;
+  margin: 0;
+  overflow-x: hidden;
+
 }
 
+
+
 .portfolio .image-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  width: 100%;
   flex-wrap: wrap;
-  padding: 1rem 0;
 }
 
 .portfolio .image-container .box {
-  width: 35rem;
+
+  width: 31rem;
   margin: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 25rem;
-  position: relative;
-  border: 1.5rem solid var(--primary-bg-color);
+  border-radius: 0.3rem;
+box-shadow: -3px 5px 10px 0px rgba(0,0,0,0.3);  overflow: hidden;
+  height: 27rem;
 }
 
 .portfolio .image-container .box img {
-  height: auto;
-  width: 50%;
-  object-fit: cover;
-}
+  box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.2);}
 
 .portfolio .image-container .box .info h3 {
   font-size: 2.5rem;
-  color: var(--primary-text-color);
+  color: var(--primary-text-color); /*for dark mode toggle*/
 }
 .btn{
   cursor: url(/src/about/assets/hover-cursor.png),
   url(/src/about/assets/hover-cursor.png), pointer;
 }
 
+
+/*navbar*/
 .topnav {
   overflow: hidden;
+    font-size: 1.168vw;
+
 }
 
 .topnav a {
@@ -135,7 +140,7 @@ body {
   font-size: 1.168vw;
   font-weight: 700;
 }
-
+/*delays animate*/
 .delay-1 {
   animation-delay: 0.25s;
 }

@@ -12,7 +12,7 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"><link href="" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +37,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars">///</i>
         </a>
+        <!-- <div class="popup-menu">
+          <a class="popup-menu-link" href="#">Home</a>
+          <a class="popup-menu-link" href="#">About</a>
+          <a class="popup-menu-link" href="#">Contact</a>
+        </div> -->
     </nav>
     <!--end navbar -->
 
@@ -113,6 +118,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   </div>
 
 <script language="JavaScript" type="text/javascript" src="about.js"></script>
+<script>
+  const navbar = document.querySelector('.navbar');
+const burgerMenu = document.querySelector('.burger-menu');
+const popupMenu = document.querySelector('.popup-menu');
 
+navbar.addEventListener('mouseenter', () => {
+  navbar.classList.add('navbar-highlight');
+});
+
+navbar.addEventListener('mouseleave', () => {
+  navbar.classList.remove('navbar-highlight');
+});
+
+burgerMenu.addEventListener('click', () => {
+  popupMenu.classList.toggle('popup-menu-open');
+});
+
+const navbarLinks = document.querySelectorAll('.navbar-link');
+
+navbarLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    navbarLinks.forEach((otherLink) => {
+      otherLink.classList.remove('navbar-link-active');
+    });
+    link.classList.add('navbar-link-active');
+    popupMenu.classList.remove('popup-menu-open');
+  });
+});
+</script>
 </body>
 </html>

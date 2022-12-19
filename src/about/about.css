@@ -13,9 +13,8 @@ body {
   color: #333;
   margin: 0;
   overflow-x: hidden;
-  
 }
-.main-container{
+.main-container {
   padding: 2.18rem 1.6rem;
 
   background-image: url(assets/transparent.png);
@@ -119,7 +118,6 @@ h2 {
     float: right;
     display: block;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -136,7 +134,6 @@ h2 {
     display: block;
     text-align: left;
   }
-  
 }
 /* 
 header {
@@ -223,7 +220,6 @@ nav ul li a {
   height: auto;
 }
 .content {
-
   margin-top: -2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -303,8 +299,7 @@ article [class^="circle"] {
   letter-spacing: 0;
   z-index: 2;
   opacity: 0.9;
-  color:#333;
-
+  color: #333;
 }
 
 .circle {
@@ -313,7 +308,7 @@ article [class^="circle"] {
   margin-right: 50%;
   width: 20.9rem;
   height: 20.9rem;
-  background-color: rgba(199,81,70, 0.8);
+  background-color: rgba(199, 81, 70, 0.8);
   border-radius: 50%;
   z-index: -2;
   transform: translate(0px, 0px);
@@ -386,14 +381,18 @@ article [class^="circle"] {
 
 button {
   overflow: visible;
-} 
+}
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, input, select, textarea {
-  color: #5A5A5A;
+button,
+input,
+select,
+textarea {
+  color: #5a5a5a;
   font: inherit;
   margin: 0;
 }
@@ -411,13 +410,12 @@ textarea {
   max-width: 768px;
   margin: 60px auto;
   position: relative;
-} 
+}
 
-
- form {
+form {
   padding: 37.5px;
   margin: 50px 0;
-} 
+}
 
 /* h1 {
   color: #474544;
@@ -427,12 +425,11 @@ textarea {
   text-align: center;
   text-transform: uppercase;
 } */
-.head-wrapp{
+.head-wrapp {
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: 1s ease-in-out;
-  
 }
 .head-wrapp:hover {
   color: #ec8c60;
@@ -458,9 +455,8 @@ textarea {
 .submit a span {
   position: relative;
   z-index: 2;
-  cursor: url(/src/about/assets/hover-cursor.png), url(/src/about/assets/hover-cursor.png),
-  pointer;
-
+  cursor: url(/src/about/assets/hover-cursor.png),
+    url(/src/about/assets/hover-cursor.png), pointer;
 }
 
 .submit a:after {
@@ -480,9 +476,7 @@ a:hover {
 
 .submit a:hover:after {
   width: 100%;
-  
 }
-
 
 .underline {
   border: solid 1px;
@@ -492,7 +486,7 @@ a:hover {
 .icon_wrapper {
   margin: 50px auto 0;
   width: 100%;
-} 
+}
 
 .icon {
   display: block;
@@ -500,57 +494,63 @@ a:hover {
   height: 50px;
   margin: 0 auto;
   width: 50px;
-} 
+}
 
 .email {
-	float: right;
-	width: 45%;
+  float: right;
+  width: 45%;
 }
 
- input[type='text'], [type='email'], select, textarea {
-	background: none;
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
   border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
-	font-size: 1.000em;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
   font-weight: 400;
   letter-spacing: 1px;
-	margin: 0em 0 1.875em 0;
-	padding: 0 0 0.875em 0;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
   text-transform: uppercase;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
-	outline: none;
-	padding: 0 0 0.875em 0;
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
 }
 
 .message {
-	float: none;
+  float: none;
 }
 
 .next .name {
-	float: left;
-	width: 45%;
+  float: left;
+  width: 45%;
 }
 
 select {
-  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-} 
+}
 
 select::-ms-expand {
   display: none;
@@ -565,30 +565,29 @@ select::-ms-expand {
 }
 
 textarea {
-	line-height: 150%;
-	height: 150px;
-	resize: none;
+  line-height: 150%;
+  height: 150px;
+  resize: none;
   width: 100%;
 }
 
 ::-webkit-input-placeholder {
-	color: #474544;
+  color: #474544;
 }
 
-:-moz-placeholder { 
-	color: #474544;
-	opacity: 1;
+:-moz-placeholder {
+  color: #474544;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #474544;
-	opacity: 1;
+  color: #474544;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #474544;
+  color: #474544;
 }
-
 
 @media screen and (max-width: 768px) {
   #container {
@@ -601,12 +600,11 @@ textarea {
   .next h1 {
     font-size: 26px;
   }
-  
-  
+
   .underline {
     width: 68px;
   }
-  
+
   #form_button {
     padding: 15px 25px;
   }
@@ -616,17 +614,62 @@ textarea {
   .next h1 {
     font-size: 18px;
   }
-  
+
   .icon {
     height: 35px;
     width: 35px;
   }
-  
+
   .underline {
     width: 53px;
   }
-  
-  input[type='text'], [type='email'], select, textarea {
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
     font-size: 0.875em;
   }
 }
+
+/* chatgtp burger menu  
+
+.popup-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup-menu.popup-menu-open {
+  transform: translateY(0);
+}
+
+.popup-menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.popup-menu-link:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+} */

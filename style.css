@@ -62,13 +62,16 @@ nav {
   opacity: 1;
 }
 
-body {
-} 
+.imgg{
+margin-top: 0;
+}
+
 main{
 height: 100vh;
 }
 .boxer{
-  height: 35%;
+  height: 42%;
+  /* border: #ec8c60 2px solid; */
 }
 
 
