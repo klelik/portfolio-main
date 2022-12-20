@@ -78,7 +78,7 @@ const showData = projectsData.map((project, index) => {
   <div class="flex justify-center transform transition ease-in-out duration-1000 hover:scale-105 hover:rotate-[360deg]">
     <img class="rounded-full object-cover h-[150px] w-[150px]" src="assets/${
       project.img
-    }" alt="" />
+    }" alt="${project.title}" />
 
   </div>
     <div class="info ">
