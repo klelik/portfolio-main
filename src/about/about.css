@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+html{
+    scroll-behavior: smooth;
+
+}
 * {
   cursor: url(assets/sketch-coursor-final.png), auto;
   font-family: "Merriweather", serif;
@@ -275,7 +279,7 @@ overflow: hidden;
   text-align: justify;
 
 }
-.image-holder{
+.image-holder img{
   margin-top: 15vh;
   display: flex;
   align-items: center;
@@ -283,13 +287,31 @@ overflow: hidden;
   height:100%;
   max-width:650px;
   text-align: center;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+}
+/*float effect*/
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-4px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 .profile{
   
   width: 30.9rem;
   height: 30.9rem;
   display: inline-block;
-  border-radius: 15px 230px 230px 15px;
+  border-radius: 15px ;
   background-size: cover;
   background-position: center;
 }
@@ -708,4 +730,28 @@ footer img{
   width: 2.5rem;
   color: #ec8c60;
 
+}
+
+
+/*Magic Scroll*/
+#reveal1 {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+#reveal1.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
 }
