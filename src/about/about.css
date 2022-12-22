@@ -16,7 +16,7 @@ body {
 }
 .main-container {
   padding: 2.18rem 1.6rem;
-
+  padding-bottom: 0.6rem;
   background-image: url(assets/transparent.png);
 }
 
@@ -48,7 +48,6 @@ h2 {
   /* margin-top: -5px;
   margin-left: -10px; */
 }
-
 .topnav a {
   float: right;
   display: block;
@@ -262,7 +261,6 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-
 /* grid-template-columns: repeat(2, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
@@ -274,6 +272,7 @@ border-bottom: 0.1rem solid #9e9e9e;
 overflow: hidden;
 }
 .right-circle{
+  text-align: justify;
 
 }
 .image-holder{
@@ -290,7 +289,7 @@ overflow: hidden;
   width: 30.9rem;
   height: 30.9rem;
   display: inline-block;
-  border-radius:50%;
+  border-radius: 15px 230px 230px 15px;
   background-size: cover;
   background-position: center;
 }
@@ -416,32 +415,12 @@ article [class^="circle"] {
   background: #F2F3EB;
 } */
 
-button {
-  overflow: visible;
+#contact{
+  border-bottom: 0.1rem solid #9e9e9e;
+height: 100%;
 }
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-input,
-select,
-textarea {
-  color: #5a5a5a;
-  font: inherit;
-  margin: 0;
-}
-
-input {
-  line-height: normal;
-}
-
-textarea {
-  overflow: auto;
-}
-
+/* FORM */
+/* form styling */
 #container {
   border: solid 3px #474544;
   max-width: 768px;
@@ -454,67 +433,6 @@ form {
   margin: 50px 0;
 }
 
-/* h1 {
-  color: #474544;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 7px;
-  text-align: center;
-  text-transform: uppercase;
-} */
-.head-wrapp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: 1s ease-in-out;
-}
-.head-wrapp:hover {
-  color: #ec8c60;
-  opacity: 0.5s;
-}
-
-.submit a {
-  display: block;
-  width: 150px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #333;
-  border: 2px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all 0.35s;
-}
-
-.submit a span {
-  position: relative;
-  z-index: 2;
-  cursor: url(/src/about/assets/hover-cursor.png),
-    url(/src/about/assets/hover-cursor.png), pointer;
-}
-
-.submit a:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #ec8c60;
-  transition: all 0.35s;
-}
-
-a:hover {
-  color: #fff;
-}
-
-.submit a:hover:after {
-  width: 100%;
-}
-
 .underline {
   border: solid 1px;
   width: 80px;
@@ -523,14 +441,6 @@ a:hover {
 .icon_wrapper {
   margin: 50px auto 0;
   width: 100%;
-}
-
-.icon {
-  display: block;
-  fill: #474544;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
 }
 
 .email {
@@ -572,32 +482,12 @@ textarea:focus {
   padding: 0 0 0.875em 0;
 }
 
-.message {
-  float: none;
-}
-
-.next .name {
+#contact .name {
   float: left;
   width: 45%;
 }
 
-select {
-  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
-    no-repeat right;
-  outline: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
 .subject {
-  width: 100%;
-}
-
-.telephone {
   width: 100%;
 }
 
@@ -610,31 +500,75 @@ textarea {
 
 ::-webkit-input-placeholder {
   color: #474544;
+  opacity: 0.7;
 }
 
-:-moz-placeholder {
-  color: #474544;
-  opacity: 1;
+/* button slide fill effect */
+.head-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+.head-wrapp:hover {
+  color: #ec8c60;
+  opacity: 0.5s;
 }
 
-::-moz-placeholder {
-  color: #474544;
-  opacity: 1;
+.submit a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  cursor: url(/src/about/assets/hover-cursor.png),
+  url(/src/about/assets/hover-cursor.png), pointer;
 }
 
-:-ms-input-placeholder {
-  color: #474544;
+.submit a span {
+  position: relative;
+  z-index: 2;
+  cursor: url(/src/about/assets/hover-cursor.png),
+    url(/src/about/assets/hover-cursor.png), pointer;
 }
 
+.submit a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ec8c60;
+  transition: all 0.35s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.submit a:hover:after {
+  width: 100%;
+}
+
+/* Form Responsive */
 @media screen and (max-width: 768px) {
   #container {
     margin: 20px auto;
-    width: 95%;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .next h1 {
+  #contact h1 {
     font-size: 26px;
   }
 
@@ -648,7 +582,7 @@ textarea {
 }
 
 @media screen and (max-width: 420px) {
-  .next h1 {
+  #contact h1 {
     font-size: 18px;
   }
 
@@ -668,6 +602,7 @@ textarea {
     font-size: 0.875em;
   }
 }
+/* END FORM */
 
 /* chatgtp burger menu  
 
@@ -710,3 +645,67 @@ textarea {
     display: none;
   }
 } */
+/*drop me a line effect*/
+.second-section span {
+  margin-bottom: -.3rem;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #333;
+  font-weight: 550;
+  position: relative;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0  rgba(236,140,96,0.5), 0 2px 0  rgba(236,140,96,0.5);
+  transition: box-shadow .3s;
+  overflow: hidden;
+}
+.second-section span:hover{
+  color:#333;
+  cursor: url(assets/hover-cursor.png), pointer;
+  box-shadow: inset 0 -30px 0  rgba(236,140,96,0.7), 0 2px 0  rgba(236,140,96,0.7);
+}
+/* .second-section span::before {
+  content: "";
+  position: absolute;
+
+  width: 7.8rem;
+  height: 1rem;
+  bottom: -2px;
+  transform: skew(-12deg) translateX(-50%);
+  transform: rotate(1deg);
+  background: #ec8c60;
+  opacity: .6;
+  z-index: -1;
+}
+
+.second-section span:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 1px;
+  left: 0;
+  background-color: #333;
+  opacity: .6;
+  transform-origin: bottom right;
+  transition: transform .25s ease-in-out;
+}
+
+.second-section span:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+footer img{
+  height: 100%;
+  width: 2.5rem;
+  color: #ec8c60;
+
+}

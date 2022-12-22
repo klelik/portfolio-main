@@ -1,17 +1,34 @@
 * {
   margin: 0px;
   padding: 0px;
-  cursor: 
-  url(/src/about/assets/sketch-coursor-final.png), auto;
+  cursor: url(/src/about/assets/sketch-coursor-final.png), auto;
 }
-body{
-  background-image: url('/src/about/Paper-bckg.png');
-}
-
-.content{
-  margin-top: 10%;
+body {
+  background-image: url("/src/about/Paper-bckg.png");
 }
 
+main {
+  height: 100vh;
+}
+
+.boxer {
+  height: 42%;
+}
+
+p.description {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4vh;
+  color: black;
+  opacity: 0.6;
+}
+
+.buttons-box {
+  margin-top: 5%;
+}
+
+.wrapper {
+  transform: translate(-50%, -50%);
+}
 
 p.name {
   font-family: "Ubuntu", sans-serif;
@@ -30,26 +47,16 @@ p.name {
   min-height: 100vh;
 }
 
-p.description {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 4vh;
-  color: black;
-  opacity: 0.6;
-}
-
 nav {
   position: relative;
   top: 8vh;
 }
-
 
 .social {
   padding-left: 15px;
   padding-right: 15px;
   display: inline;
 }
-
-
 
 .fab {
   color: white;
@@ -60,25 +67,6 @@ nav {
 
 .fab:hover {
   opacity: 1;
-}
-
-.imgg{
-margin-top: 0;
-}
-
-main{
-height: 100vh;
-}
-.boxer{
-  height: 42%;
-  /* border: #ec8c60 2px solid; */
-}
-
-
-
-.wrapper {
-  transform: translate(-50%, -50%);
-
 }
 
 a {
@@ -100,9 +88,8 @@ a {
 a span {
   position: relative;
   z-index: 2;
-  cursor: url(/src/about/assets/hover-cursor.png), url(/src/about/assets/hover-cursor.png),
-  pointer;
-
+  cursor: url(/src/about/assets/hover-cursor.png),
+    url(/src/about/assets/hover-cursor.png), pointer;
 }
 
 a:after {
@@ -122,31 +109,36 @@ a:hover {
 
 a:hover:after {
   width: 100%;
-  
 }
+
 @media screen and (max-width: 700px) {
+  .boxer img {
+    margin-bottom: -10%;
+    scale: 90%;
+  }
   p.name {
-    font-size: 5vh;
+    font-size: 4.5vh;
   }
   p.description {
-    font-size: 3vh;
+    font-size: 2.5vh;
     top: 4vh;
   }
-  div.wrapper  a{
-    width: 100px;
+  div.wrapper a {
+    width: 80px;
     font-size: 13px;
   }
 }
 
+/* animation-delays */
 .delay-1 {
-  animation-delay: .25s;
-  }
-  .delay-2 {
-  animation-delay: .5s;
-  }
-  .delay-3 {
-  animation-delay: .75s;
-  }
-  .delay-4 {
+  animation-delay: 0.25s;
+}
+.delay-2 {
+  animation-delay: 0.5s;
+}
+.delay-3 {
+  animation-delay: 0.75s;
+}
+.delay-4 {
   animation-delay: 1s;
-  }
+}
