@@ -7,10 +7,9 @@
   <link rel="stylesheet" href="./about.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +17,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
 <title>About</title>
 </head>
 <body class="animate__animated animate__animated animate__fadeIn delay-1">
-  <a name="top"></a>   <!-- go to the top -->
+  <a id="button"></a>
+
 </div>
   <div class="main-container">
     <!-- navbar -->
@@ -32,7 +37,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <p id="date">date</p>
         </div>
 
-        <a href = "mailto:klelika1998@gmail.com?subject=Contact&body=Hi Klement, ">Contact</a>
+        <a href="#contact">Contact</a>
         <a href="/src/projects/projects.html">Projects</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars">///</i>
@@ -54,9 +59,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 <div class=""> <img class="html-cirle" src="/src/projects/assets/html-circle.png"> </div> -->
            </div>
           </article>
-        <div class="name animate__animated  animate__fadeIn delay-6" style="transform: translate(0px, 0px);">Klement's Space</div>
+        <div class="name animate__animated  animate__fadeIn delay-6" id="name" style="transform: translate(0px, 0px);">Klement's Space</div>
         <div class="div1 animate__animated  animate__fadeIn delay-2">
-            <h2>Design</h2>
+            <h2 >Design</h2>
             <p>
               Design-oriented programming is a way to author computer applications using a combination of text, graphics, and style elements in a unified code-space. The best products do two things well: features and details. Features are what draw people to your product. Details are what keep them there.
 
@@ -69,7 +74,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <img class="main-img" height="100px" src="assets/big_ben-2-removebg.png">
         </span>
         <div class="div3 animate__animated  animate__fadeIn delay-2">
-            <h2>Programming</h2>
+            <h2 >Programming</h2>
             <p>
               "In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them."           </p>
         </div>
@@ -79,7 +84,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <!-- start second section-->
           <section class="second-section" id="trigger1">
 
-            <div class="right-circle" id="reveal1">
+            <div class="right-circle" id="reveal1" >
               <h2>About me </h1>
               <div>
                 <h4> Hi,</h4>
@@ -97,7 +102,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 
               </div>
             </div>
-            <div class="image-holder">
+            <div class="image-holder" id="reveal1">
               <img class="profile" src="assets/profile2.png">
             </div>
 
@@ -105,51 +110,68 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <!-- end second section-->
 
         <!--  third section-->
-    <section class="next animate__animated  animate__fadeIn " id="contact">
-        <div id="container">
+    <section class=" "id="contact" >
+<div class="next">
+        <div class="lottie">
+          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_abqysclq.json"  background="transparent"  speed="0.6"  style="max-width: 700px; height: 700px;"  loop  autoplay></lottie-player>
+        </div>
+          <div id="container" id="trigger2">
+  
+              <div class="head-wrapp">
+                <h3>&bull; Keep in Touch &bull;</h3>
+                <div class="underline"></div>
+              </div>
+              <form name="myform" action="https://formsubmit.co/klelika1998@gmail.com" method="POST" onSubmit="alert('Thank you for your feedback.');" id="contact_form">
+                <input type="hidden" name="_subject" value="Portfolio Contact Email">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="name-email">
+                  <label for="name-email"></label>
+                  <input type="text" placeholder="My name is" name="name" id="name_input" required>
+                </div>
+                <div class="email">
+                  <label for="email"></label>
+                  <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+                </div>
+                <div class="message">
+                  <label for="message"></label>
+                  <textarea name="message" placeholder="I'd like to contact you about" id="message_input" cols="30" rows="5" required></textarea>
+                </div>
+                <!-- <input type="hidden" name="_next" value="/src/projects/projects.html"> -->
+                <div class="submit ">
+                  <a onclick="myform.submit()"><span type="submit" value="Send Message" onclick="myform.submit()">Send </span></a>
+                </div>
+                <!-- <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button> -->
+  
+              </form><!-- // End form -->
+            </div><!-- // End #container -->
+</div>
+<a id="back-to-top" href="#" class="back-to-top" role="button"><i style="font-size: 2.5rem;" class="fas fa-angle-double-up animate__animated animate__fadeInUp"></i>
+</a>
 
-            <div class="head-wrapp">
-              <h3>&bull; Keep in Touch &bull;</h3>
-              <div class="underline"></div>
-            </div>
-            <form action="#" method="post" id="contact_form">
-              <div class="name-email">
-                <label for="name-email"></label>
-                <input type="text" placeholder="My name is" name="name" id="name_input" required>
-              </div>
-              <div class="email">
-                <label for="email"></label>
-                <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
-              </div>
-              <div class="message">
-                <label for="message"></label>
-                <textarea name="message" placeholder="I'd like to contact you about" id="message_input" cols="30" rows="5" required></textarea>
-              </div>
-              <div class="submit ">
-                <a><span type="submit" value="Send Message" id="">Send </span></a>
-              </div>
+</section>
+    
+   
 
-            </form><!-- // End form -->
-          </div><!-- // End #container -->
-          <div style="display: flex; justify-content:center; padding:1.5rem; "><a href="#top"><p>Go top ^</p></a></div>
-    </section>
-        <!-- end third section-->
-        <footer>
-            <div style="display: flex; justify-content: space-between; gap: 10px;">
-              <img src="assets/social/github-logo.png">
-              <img src="assets/social/linkedin-logo.png">
-              <img src="assets/social/email-logo.png">
+        <!-- footer-->
+        <footer class="p-20 ">
+            <div style="display: flex; justify-content: space-between; gap: 20px;">
+             <a href="https://github.com/klelik"> <i class="fa-brands fa-github"></i> </a>
+             <a href="https://www.linkedin.com/in/klement-lika-1253b855/"> <i class="fa-brands fa-linkedin"></i> </a>
+              <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
             </div>
-            
             <p>Created by Klement</p>
         </footer>
 
   </div>
+  
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 
 <script language="JavaScript" type="text/javascript" src="about.js"></script>
+<script language="JavaScript" type="text/javascript" src="/smooth-scrollbar.js"></script>
 <!-- <script>
   const navbar = document.querySelector('.navbar');
 const burgerMenu = document.querySelector('.burger-menu');
@@ -179,8 +201,10 @@ navbarLinks.forEach((link) => {
   });
 });
 </script> -->
-<script>
+<!-- lottie -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://kit.fontawesome.com/e0321efe7c.js" crossorigin="anonymous"></script>
 
-</script>
+
 </body>
 </html>
