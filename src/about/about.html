@@ -22,6 +22,7 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
 <title>About</title>
 </head>
@@ -82,9 +83,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <!-- end first section-->
 
         <!-- start second section-->
-          <section class="second-section" id="trigger1">
+          <section class="second-section" 
+                   data-aos="fade-up"
+                   data-aos-offset="200"
+                   data-aos-easing="ease-in"
+                   data-aos-duration="500">
 
-            <div class="right-circle" id="reveal1" >
+            <div class="right-circle"  >
               <h2>About me </h1>
               <div>
                 <h4> Hi,</h4>
@@ -111,7 +116,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
         <!--  third section-->
     <section class=" "id="contact" >
-<div class="next">
+<div class="next" 
+     data-aos="fade-up"
+     data-aos-offset="200"
+     data-aos-easing="ease-in"
+     data-aos-duration="500">
         <div class="lottie">
           <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_abqysclq.json"  background="transparent"  speed="0.6"  style="max-width: 700px; height: 700px;"  loop  autoplay></lottie-player>
         </div>
@@ -171,7 +180,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 
 <script language="JavaScript" type="text/javascript" src="about.js"></script>
-<script language="JavaScript" type="text/javascript" src="/smooth-scrollbar.js"></script>
+<!-- <script language="JavaScript" type="text/javascript" src="/smooth-scrollbar.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration:1200,
+    delay:50,
+  });
+</script>
+
 <!-- <script>
   const navbar = document.querySelector('.navbar');
 const burgerMenu = document.querySelector('.burger-menu');

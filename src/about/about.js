@@ -139,23 +139,24 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
 
 
-        if (scroll > $(document).height() - $(window).height() - 350) {
-            // $('#back-to-top').fadeIn();
-            $('.next').stop().fadeTo(500,1);
+        // if (scroll > $(document).height() - $(window).height() - 350) {
+        //     // $('#back-to-top').fadeIn();
+        //     // $('.next').stop().fadeTo(500,1);
 
-        } else { //when scroll is <window-height - 100 disappear
-            // $('#back-to-top').fadeOut();
+        // } else { //when scroll is <window-height - 100 disappear
+        //     // $('#back-to-top').fadeOut();
 
-            // $('.next').stop().fadeTo(500,0);
+        //     // $('.next').stop().fadeTo(500,0);
 
-        }
+        // }
 
         if ($(this).scrollTop() > $(document).height() - $(window).height() - 100) {
-				$('#back-to-top').fadeIn();
+        $('#back-to-top').stop().fadeTo(50,1);
+
                 // $('.next').fadeIn();
 
 			} else { //when scroll is <window-height - 100 disappear
-				$('#back-to-top').fadeOut();
+        $('#back-to-top').stop().fadeTo(50,0);
 
                 // $('.next').fadeOut();
 
