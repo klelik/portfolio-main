@@ -27,14 +27,26 @@ console.log(posYellow);
 console.log(posName);
 
 
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// gsap.to(".circle-yellow", {
+//   scrollTrigger: {
+//     trigger: ".parallax",
+//     start: "top top",
+//     end: "top top",
+//     markers: true,
+//     pin:true,
+//   }
+// });
+
 //parallax
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
 
-  red.style.top = posRed + value * 0.3 + "px";
-  nameBig.style.top = posName + value * -0.1 + "px";
-  yellow.style.top = posYellow + value * 0.65 + "px";
+  red.style.top = posRed + value * 0.7 + "px";
+  yellow.style.top = posYellow + value * 1 + "px";
 });
 
 
@@ -89,77 +101,16 @@ window.addEventListener("scroll", function () {
 //   });
 // });
 
-//Scroll Magic
-var controller = new ScrollMagic.Controller();
-
-// build scene
-var firstFadeIn = new ScrollMagic.Scene({
-							triggerElement: "#trigger1",
-							triggerHook: 0.9,
-							offset: 100, // move trigger to center of element
-							reverse: false // only do once
-						})
-						.setClassToggle("#reveal1", "visible") // add class toggle
-						// .addIndicators() // add indicators (requires plugin)
-						.addTo(controller);
-
-// var secondFadeIn = new ScrollMagic.Scene({
-//     triggerElement: "#trigger2",
-//     triggerHook: 0.9,
-//     offset: 100, // move trigger to center of element
-//     reverse: false // only do once
-// })
-// .setClassToggle("#reveal1", "visible") // add class toggle
-// .addIndicators() // add indicators (requires plugin)
-// .addTo(controller);
-
-// build scene contact form
-
-console.log(controller);
-
-//go top
-// var btn = $('#button');
-
-// $(window).scroll(function() {
-//   if ($(window).scrollTop() > 300) {
-//     btn.addClass('show');
-//   } else {
-//     btn.removeClass('show');
-//   }
-// });
-
-// btn.on('click', function(e) {
-//   e.preventDefault();
-//   $('html, body').animate({scrollTop:3}, '1600');
-// });
 
 //scroll to top, fade in when scroll is 100 px before the end of the page
 $(document).ready(function(){
 	$(window).scroll(function () {
         var scroll = $(window).scrollTop();
-
-
-        // if (scroll > $(document).height() - $(window).height() - 350) {
-        //     // $('#back-to-top').fadeIn();
-        //     // $('.next').stop().fadeTo(500,1);
-
-        // } else { //when scroll is <window-height - 100 disappear
-        //     // $('#back-to-top').fadeOut();
-
-        //     // $('.next').stop().fadeTo(500,0);
-
-        // }
-
         if ($(this).scrollTop() > $(document).height() - $(window).height() - 100) {
         $('#back-to-top').stop().fadeTo(50,1);
 
-                // $('.next').fadeIn();
-
 			} else { //when scroll is <window-height - 100 disappear
         $('#back-to-top').stop().fadeTo(50,0);
-
-                // $('.next').fadeOut();
-
 			}
 		});
 		// scroll body to 0px on click
@@ -171,6 +122,7 @@ $(document).ready(function(){
 		});
 });
 
-var Scrollbar = window.Scrollbar;
+// var Scrollbar = window.Scrollbar;
 
-Scrollbar.init(document.querySelector('body'),options);
+// Scrollbar.init(document.querySelector('body'),options);
+

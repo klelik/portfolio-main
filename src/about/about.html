@@ -29,16 +29,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <body class="animate__animated animate__animated animate__fadeIn delay-1">
   <a id="button"></a>
 
-</div>
-  <div class="main-container">
+  <div  class="main-container" id="content" data-scroll-container="" >
     <!-- navbar -->
-    <nav class="topnav" id="myTopnav">
+    <nav class="topnav" id="myTopnav" >
         <div class="active">
             <a href="/index.html" >Home</a>
             <p id="date">date</p>
         </div>
 
-        <a href="#contact">Contact</a>
+        <a href="#contact" data-scroll-to>Contact</a>
         <a href="/src/projects/projects.html">Projects</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars">///</i>
@@ -50,20 +49,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         </div> -->
     </nav>
     <!--end navbar -->
-
-    <section class="content">
+    <div >
+    <section class="content"  >
         <article class="head">
-            <div class="parallax">
+            <div class="parallax" >
                 <div class="circle animate__animated animate__animated animate__bounceInLeft delay-2" id="red"></div>
-                <div class="circle-yellow animate__animated  animate__bounceInRight delay-1" id="yellow"></div>
-                <!-- <div class=""> <img class="coffee" src="/src/projects/assets/coffee.png"> </div>
-                <div class=""> <img class="html-cirle" src="/src/projects/assets/html-circle.png"> </div> -->
+                <div class="circle-yellow animate__animated  animate__bounceInRight delay-1" id="yellow" ></div>
            </div>
           </article>
-        <div class="name animate__animated  animate__fadeIn delay-6" id="name" style="transform: translate(0px, 0px);">Klement's Space</div>
-        <div class="div1 animate__animated  animate__fadeIn delay-2">
-            <h2 >Design</h2>
-            <p>
+        <div class="name animate__animated  animate__fadeIn delay-6" id="name"  data-scroll data-scroll-speed="1" data-scroll-delay="0.2">Klement's Space</div>
+        <div class="div1 animate__animated  animate__fadeIn delay-2" data-scroll data-scroll-speed="1.4">
+            <h2 data-scroll data-scroll-speed="0.5" data-scroll-delay="0.1" >Design</h2>
+            <p data-scroll data-scroll-speed="-0.4" data-scroll-delay="0.08">
               Design-oriented programming is a way to author computer applications using a combination of text, graphics, and style elements in a unified code-space. The best products do two things well: features and details. Features are what draw people to your product. Details are what keep them there.
 
 
@@ -74,21 +71,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <span class="div2 animate__animated  animate__slideInUp ">
             <img class="main-img" height="100px" src="assets/big_ben-2-removebg.png">
         </span>
-        <div class="div3 animate__animated  animate__fadeIn delay-2">
-            <h2 >Programming</h2>
-            <p>
+        <div class="div3 animate__animated  animate__fadeIn delay-2" >
+            <h2 data-scroll data-scroll-speed="0.5" data-scroll-delay="0.1">Programming</h2>
+            <p data-scroll data-scroll-speed="-0.4" data-scroll-delay="0.08">
               "In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them."           </p>
         </div>
       </section>
         <!-- end first section-->
 
         <!-- start second section-->
-          <section class="second-section" 
-                   data-aos="fade-up"
-                   data-aos-offset="200"
-                   data-aos-easing="ease-in"
-                   data-aos-duration="500">
-
+          <section class="second-section" data-scroll-speed="1.7" data-scroll >
             <div class="right-circle"  >
               <h2>About me </h1>
               <div>
@@ -103,11 +95,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                     <br> In my spare time I fly drones , practice on video editing, play video games and travel as much as I can.<br>
 
                     <!-- <br>I am confident that my skills and I have passion for software development. I also work good with a team  creating innovative solutions.<br> -->
-                    <br> I’m always down for hearing about new projects, so feel free to <a class="hover-underline-animation" href="#contact"><span>drop me a line</span></a>. 
+                    <br> I’m always down for hearing about new projects, so feel free to <a class="hover-underline-animation" href="#contact" data-scroll-to><span>drop me a line</span></a>. 
                 
               </div>
             </div>
-            <div class="image-holder" id="reveal1">
+            <div class="image-holder" id="reveal1"  data-scroll-speed="1" data-scroll>
               <img class="profile" src="assets/profile2.png">
             </div>
 
@@ -116,11 +108,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
         <!--  third section-->
     <section class=" "id="contact" >
-<div class="next" 
-     data-aos="fade-up"
-     data-aos-offset="200"
-     data-aos-easing="ease-in"
-     data-aos-duration="500">
+<div class="next" >
         <div class="lottie">
           <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_abqysclq.json"  background="transparent"  speed="0.6"  style="max-width: 700px; height: 700px;"  loop  autoplay></lottie-player>
         </div>
@@ -162,7 +150,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
    
 
         <!-- footer-->
-        <footer class="p-20 ">
+        <footer class="p-20 " data-scroll-to >
             <div style="display: flex; justify-content: space-between; gap: 20px;">
              <a href="https://github.com/klelik"> <i class="fa-brands fa-github"></i> </a>
              <a href="https://www.linkedin.com/in/klement-lika-1253b855/"> <i class="fa-brands fa-linkedin"></i> </a>
@@ -170,24 +158,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             </div>
             <p>Created by Klement</p>
         </footer>
-
+      </div>
   </div>
-  
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--Jquery for scroll to top and fade in  -->
 <script language="JavaScript" type="text/javascript" src="about.js"></script>
 <!-- <script language="JavaScript" type="text/javascript" src="/smooth-scrollbar.js"></script> -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+ <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> //AOS scroll animate -->
+<!-- <script>
   AOS.init({
-    duration:1200,
+    duration:500,
     delay:50,
+    offset:200,
+    easing:"ease-in"
   });
-</script>
+</script> -->
 
 <!-- <script>
   const navbar = document.querySelector('.navbar');
@@ -221,7 +206,8 @@ navbarLinks.forEach((link) => {
 <!-- lottie -->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://kit.fontawesome.com/e0321efe7c.js" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+<script src="./locoScroll.js"></script>
 
 </body>
 </html>

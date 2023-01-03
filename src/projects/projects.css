@@ -73,17 +73,17 @@ box-shadow: -3px 5px 10px 0px rgba(0,0,0,0.3);  overflow: hidden;
 .topnav a:hover {
   color: #ec8c60;
 }
-.topnav a.active:hover {
-  color: #ec8c60;
+.topnav a.logo:hover {
+  color: #8015b9;
 }
-
-.topnav div.active {
+.topnav div.logo {
   color: black;
   float: left;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
+
 #date {
   margin-left: 30px;
   font-size: smaller;
