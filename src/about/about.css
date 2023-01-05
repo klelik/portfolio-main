@@ -59,8 +59,7 @@ h2 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  cursor: url(assets/hover-cursor.png), url(assets/hover-cursor.png),
-    pointer;
+  cursor: url(assets/hover-cursor.png), url(assets/hover-cursor.png), pointer;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -112,31 +111,48 @@ h2 {
 .topnav .icon {
   display: none;
 }
+.topnav .icon i {
+font-size: 1.3em;
+}
 
 @media screen and (max-width: 600px) {
+  body{
+    padding: 0 0 0 ;
+  }
   .topnav a:not(:first-child) {
     display: none;
+    /* width: 30px; */
+
   }
   .topnav a.icon {
     float: right;
     display: block;
+    width: fit-content;
+
   }
 }
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0;
   }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: left;
   }
+  .topnav.responsive a:not(:first-child):not(:last-child) {
+    font-size: 14px;
+    width: fit-content;
+  }
+
 }
 /* 
 header {
@@ -447,7 +463,7 @@ form {
   padding: 37.5px;
   /* margin: 50px 0; */
 }
-.head-wrapp h3{
+.head-wrapp h3 {
   margin-top: -50px;
   font-size: 2rem;
 }
@@ -566,20 +582,20 @@ a:hover {
 /* Form Responsive */
 
 @media screen and (max-width: 1068px) {
-  .lottie{
+  .lottie {
     display: none;
   }
-  .next{
+  .next {
     border: none;
   }
   #container {
     margin: 20px auto;
     width: 90%;
-  border: solid 2px #474544;
-}
-.next h3{
-  margin-top: 5px;
-}
+    border: solid 2px #474544;
+  }
+  .next h3 {
+    margin-top: 5px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -721,14 +737,14 @@ footer {
   padding: 0;
 }
 
-footer i{
-  color:#474544;
+footer i {
+  color: #474544;
   cursor: url(/src/about/assets/hover-cursor.png),
     url(/src/about/assets/hover-cursor.png), pointer;
   font-size: 2.5rem;
   transition: 0.5s ease-in-out;
 }
-footer i:hover{
+footer i:hover {
   color: #ec8c60;
 }
 
@@ -747,11 +763,10 @@ footer i:hover{
   animation: bounce 5s 1; /* referring directly to the animation's @keyframe declaration */
   animation-delay: 5s;
   transition: 0.5s ease-in-out;
-
 }
 
 .back-to-top i:hover {
- /* animation: pulse 1s infinite;   referring directly to the animation's @keyframe declaration */
+  /* animation: pulse 1s infinite;   referring directly to the animation's @keyframe declaration */
   animation-delay: 0;
   transform: scale(1.2) translateY(-5px);
   color: #ec8c60;

@@ -106,8 +106,11 @@ body {
 .topnav .icon {
   display: none;
 }
-
+.topnav .icon i {
+  font-size: 1.3em;
+  }
 @media screen and (max-width: 600px) {
+
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -118,6 +121,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  body{
+    padding: 13.3px 9.7px;
+  }
   .topnav.responsive {
     position: relative;
   }
@@ -131,6 +137,41 @@ body {
     display: block;
     text-align: left;
   }
+}
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child) {
+    display: none;
+    /* width: 30px; */
+
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .topnav.responsive a:not(:first-child):not(:last-child) {
+    font-size: 14px;
+    width: fit-content;
+  }
+
 }
 /* @media screen and (max-width: 700px) {
   .info h3{
@@ -160,3 +201,10 @@ body {
 .delay-6 {
   animation-delay: 1.5s;
 }
+.delay-7 {
+  animation-delay: 1.75s;
+}
+.delay-8 {
+  animation-delay: 2s;
+}
+

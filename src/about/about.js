@@ -49,7 +49,6 @@ window.addEventListener("scroll", function () {
   yellow.style.top = posYellow + value * 1 + "px";
 });
 
-
 // window.addEventListener("scroll", function() {
 //     const distance = window.scrollY;
 //     document.querySelector(".head").style.transform = `translateY(${distance *

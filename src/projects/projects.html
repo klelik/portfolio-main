@@ -17,7 +17,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Projects</title>
   </head>
-  <body class=" animate__animated animate__animated animate__fadeIn">
+  <body data-scroll-container="" class="animate__animated animate__animated animate__fadeIn">
     <!-- navbar -->
     <nav class="topnav" id="myTopnav">
       <div class="logo">
@@ -27,17 +27,18 @@
 
       <a href = "mailto:klelika1998@gmail.com?subject=Contact&body=Hi Klement, ">Contact</a>
       <a href="/src/about/about.html" >About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars">///</i>
+      <a href="javascript:void(0);" class="icon" onclick="navBar()">
+        <i  class="fa fa-bars"></i>
       </a>
   </nav>
   <!--end navbar -->
-    <main id="smooth-wrapper" data-scroll-container="">
+    <main id="smooth-wrapper" >
       <section
         class="portfolio animate__animated animate__animated animate__fadeIn delay-1 m-auto mt-20 w-[90%]"
         id="portfolio"
       >
         <h1
+        data-scroll data-scroll-speed="0.5" data-scroll-delay="0.1"
           class="text-3xl ml-[6%] mb-10 font-bold before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#ec8c60] relative inline-block animate__animated animate__animated animate__jackInTheBox delay-1"
         >
           <span class="relative text-white">Projects</span>
@@ -46,6 +47,7 @@
         <div
         id="dataContainer"
           class="image-container animate__animated animate__animated animate__fadeIn delay-2"
+          data-scroll="" data-scroll-delay="0.08" data-scroll-speed="1.5"
         >
         <!-- Projects go here -->
         </div>
@@ -68,5 +70,19 @@
     type="text/javascript"
     src="/src/about/locoScroll.js"
   ></script>
+  <script src="https://kit.fontawesome.com/e0321efe7c.js" crossorigin="anonymous"></script>
+
+</script>
+<script>
+  function navBar(){
+    var x = document.getElementById("myTopnav");
+    // console.log(x);
+    if (x.className === "topnav") {
+      x.className += " responsive";
+      x.style = "display"
+    }else{
+      x.className = "topnav";
+    }
+  };
 </script>
 </html>
