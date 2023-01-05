@@ -3,7 +3,7 @@
 html {
 }
 * {
-  cursor: url(assets/sketch-coursor-final.png), auto;
+  cursor: url(/src/global/global-assets/sketch-coursor-final.png), auto;
   font-family: "Merriweather", serif;
   font-size: 1.168vw;
   letter-spacing: 0.05rem;
@@ -13,12 +13,14 @@ body {
   font-family: "Merriweather", serif;
   color: #333;
   margin: 0;
-  overflow-y:hidden;
+
 }
 .main-container {
-  padding: 2.92rem 2.13rem;
-  padding-bottom: 0.6rem;
-  background-image: url(assets/transparent.png);
+  padding: 65px 47px;
+  padding-bottom: 0;
+  background-image: url("/src/global/global-assets/Paper-bckg.png");
+
+  /* background-image: url(assets/transparent.png); */
 }
 
 /* .wrapper {
@@ -44,188 +46,7 @@ h2 {
   letter-spacing: 0.15rem;
   color: #ec8c60;
 }
-.topnav {
-  overflow: hidden;
-  /* margin-top: -5px;
-  margin-left: -10px; */
-}
-.topnav a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  cursor: url(assets/hover-cursor.png), url(assets/hover-cursor.png), pointer;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  position: relative;
-}
 
-.topnav a:hover {
-  color: #ec8c60;
-}
-.topnav a.active:hover {
-  color: #ec8c60;
-}
-
-.topnav div.active {
-  display: flex;
-  align-items: center;
-  color: black;
-  float: left;
-  text-decoration: none;
-}
-#date {
-  margin-left: 30px;
-  font-size: smaller;
-  text-transform: uppercase;
-}
-.topnav div.active p {
-  font-size: 1.168vw;
-  font-weight: 700;
-}
-
-.topnav a:after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 13px;
-  background-color: #ec8c60;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.topnav a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.topnav .icon {
-  display: none;
-}
-.topnav .icon i {
-font-size: 1.3em;
-}
-
-@media screen and (max-width: 600px) {
-  body{
-    padding: 0 0 0 ;
-    overflow-y: auto;
-  }
-  .topnav a:not(:first-child) {
-    display: none;
-    /* width: 30px; */
-
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-    width: fit-content;
-
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  .topnav.responsive a:not(:first-child):not(:last-child) {
-    font-size: 14px;
-    width: fit-content;
-  }
-
-}
-/* 
-header {
-  width: 100%;
-  background-size: cover;
-  color: #000;
-}
-
-nav {
-  justify-content: flex-end;
-  line-height: 23px;
-  color: #000;
-}
-
-nav ul {
-  list-style: none;
-  overflow: hidden;
-
-  text-align: right;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 16px 10px;
-}
-nav ul li a {
-  color: #000;
-  letter-spacing: 0.05rem;
-  text-decoration: none;
-  font-size: 20px;
-  text-decoration: underline;
-  cursor: url(assets/hover-cursor.png), url(/assets/images/original/hover.png),
-    pointer;
-  position: relative;
-}
-
-.logo {
-  line-height: 20px;
-  position: fixed;
-  margin: 16px 26px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.logo span {
-  color: blueviolet;
-}
-
-@media (max-width: 560px) {
-  nav ul {
-    max-height: 0px;
-    background: #000;
-  }
-
-  nav ul li {
-    width: 50%;
-    padding: 2px;
-    text-align: center;
-  }
-
-  .logo {
-    top: 0;
-    margin-top: 15px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .active {
-    max-height: 550px;
-  }
-} */
 
 .main-img {
   position: absolute;
@@ -247,9 +68,7 @@ nav ul li a {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
-  height: 100%;
-  padding: 15px;
+  /* padding: 15px; */
   gap: 20px;
   /* border-bottom: 0.1rem solid #9e9e9e;  moved to section{}*/
   margin-bottom: 2.58rem;
@@ -257,7 +76,7 @@ nav ul li a {
   position: relative;
   top: -2.92rem;
   z-index: -1;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .div1 {
   grid-area: 1 / 1 / 2 / 2;
@@ -547,15 +366,15 @@ textarea {
   text-align: center;
   position: relative;
   transition: all 0.35s;
-  cursor: url(/src/about/assets/hover-cursor.png),
-    url(/src/about/assets/hover-cursor.png), pointer;
+  cursor: url(/src/global/global-assets/hover-cursor.png),
+    url(/src/global/global-assets/hover-cursor.png), pointer;
 }
 
 .submit a span {
   position: relative;
   z-index: 2;
-  cursor: url(/src/about/assets/hover-cursor.png),
-    url(/src/about/assets/hover-cursor.png), pointer;
+  cursor: url(/src/global/global-assets/hover-cursor.png),
+    url(/src/global/global-assets/hover-cursor.png), pointer;
 }
 
 .submit a:after {
@@ -737,8 +556,8 @@ footer {
 
 footer i {
   color: #474544;
-  cursor: url(/src/about/assets/hover-cursor.png),
-    url(/src/about/assets/hover-cursor.png), pointer;
+  cursor: url(/src/global/global-assets/hover-cursor.png),
+    url(/src/global/global-assets/hover-cursor.png), pointer;
   font-size: 2.5rem;
   transition: 0.5s ease-in-out;
 }

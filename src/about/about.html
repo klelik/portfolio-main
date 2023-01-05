@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./about.css" type="text/css" />
+  <link rel="stylesheet" href="/src/global/locomotive-scroll/locomotivescroll.css" type="text/css" />
+  <link rel="stylesheet" href="/src/global/navbar/nav.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
@@ -163,63 +165,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--Jquery for scroll to top and fade in  -->
 <script language="JavaScript" type="text/javascript" src="about.js"></script>
-<script>
-  function navBar(){
-    var x = document.getElementById("myTopnav");
-    // console.log(x);
-    if (x.className === "topnav") {
-      x.className += " responsive";
-      x.style = "display"
-    }else{
-      x.className = "topnav";
-    }
-  };
-</script>
-<!-- <script language="JavaScript" type="text/javascript" src="/smooth-scrollbar.js"></script> -->
- <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> //AOS scroll animate -->
-<!-- <script>
-  AOS.init({
-    duration:500,
-    delay:50,
-    offset:200,
-    easing:"ease-in"
-  });
-</script> -->
+<script language="JavaScript" type="text/javascript" src="/src/global/navbar/nav.js"></script>
 
-<!-- <script>
-  const navbar = document.querySelector('.navbar');
-const burgerMenu = document.querySelector('.burger-menu');
-const popupMenu = document.querySelector('.popup-menu');
-
-navbar.addEventListener('mouseenter', () => {
-  navbar.classList.add('navbar-highlight');
-});
-
-navbar.addEventListener('mouseleave', () => {
-  navbar.classList.remove('navbar-highlight');
-});
-
-burgerMenu.addEventListener('click', () => {
-  popupMenu.classList.toggle('popup-menu-open');
-});
-
-const navbarLinks = document.querySelectorAll('.navbar-link');
-
-navbarLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    navbarLinks.forEach((otherLink) => {
-      otherLink.classList.remove('navbar-link-active');
-    });
-    link.classList.add('navbar-link-active');
-    popupMenu.classList.remove('popup-menu-open');
-  });
-});
-</script> -->
 <!-- lottie -->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://kit.fontawesome.com/e0321efe7c.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
-<script src="./locoScroll.js"></script>
+<script src="/src/global/locomotive-scroll/locomotive-scroll.js"></script>
 
 </body>
 </html>

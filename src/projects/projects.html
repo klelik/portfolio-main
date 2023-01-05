@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="./projects.css" type="text/css" />
+    <link rel="stylesheet" href="/src/global/locomotive-scroll/locomotivescroll.css" type="text/css" />
+    <link rel="stylesheet" href="/src/global/navbar/nav.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,7 +22,7 @@
   <body data-scroll-container="" class="animate__animated animate__animated animate__fadeIn">
     <!-- navbar -->
     <nav class="topnav" id="myTopnav">
-      <div class="logo">
+      <div class="active">
           <a href="/index.html" >Home</a>
           <p id="date">date</p>
       </div>
@@ -59,6 +61,8 @@
     type="text/javascript"
     src="project.js"
   ></script>
+  <script language="JavaScript" type="text/javascript" src="/src/global/navbar/nav.js"></script>
+
   <script
     language="JavaScript"
     type="text/javascript"
@@ -68,21 +72,9 @@
   <script
     language="JavaScript"
     type="text/javascript"
-    src="/src/about/locoScroll.js"
+    src="/src/global/locomotive-scroll/locomotive-scroll.js"
   ></script>
   <script src="https://kit.fontawesome.com/e0321efe7c.js" crossorigin="anonymous"></script>
 
-</script>
-<script>
-  function navBar(){
-    var x = document.getElementById("myTopnav");
-    // console.log(x);
-    if (x.className === "topnav") {
-      x.className += " responsive";
-      x.style = "display"
-    }else{
-      x.className = "topnav";
-    }
-  };
-</script>
+
 </html>
