@@ -13,7 +13,6 @@ body {
   font-family: "Merriweather", serif;
   color: #333;
   margin: 0;
-
 }
 .main-container {
   padding: 65px 47px;
@@ -46,7 +45,6 @@ h2 {
   letter-spacing: 0.15rem;
   color: #ec8c60;
 }
-
 
 .main-img {
   position: absolute;
@@ -169,21 +167,21 @@ article [class^="circle"] {
 }
 
 .circle {
-  right: 0;
-  top: 80px;
-  margin-right: 50%;
+  /* margin-left: auto; */
+  left: 0;
+  margin-left: 53%;
+  top: 100px;
   width: 20.9rem;
   height: 20.9rem;
   background-color: rgba(199, 81, 70, 0.8);
   border-radius: 50%;
   z-index: -2;
-  transform: translate(0px, 0px);
+  /* transform: translate(0px, 0px); */
 }
 
 .circle-yellow {
-  margin-left: auto;
-  left: 0;
-  margin-left: 53%;
+  right: 0;
+  margin-right: 53%;
   top: 470px;
   width: 16.73rem;
   height: 16.73rem;
@@ -591,4 +589,8 @@ footer i:hover {
 /* */
 
 button:focus {
+}
+
+.smooth-scroll {
+  overflow-y: hidden !important;
 }

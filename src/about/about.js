@@ -28,26 +28,17 @@ console.log(posName);
 
 
 
-// gsap.registerPlugin(ScrollTrigger);
+console.log(window.pageYOffset);
 
-// gsap.to(".circle-yellow", {
-//   scrollTrigger: {
-//     trigger: ".parallax",
-//     start: "top top",
-//     end: "top top",
-//     markers: true,
-//     pin:true,
-//   }
-// });
 
 //parallax
 
-window.addEventListener("scroll", function () {
-  let value = window.scrollY;
+// window.addEventListener("scroll", function () {
+//   let value = window.scrollY;
 
-  red.style.top = posRed + value * 0.7 + "px";
-  yellow.style.top = posYellow + value * 1 + "px";
-});
+//   red.style.top = posRed + value * 0.7 + "px";
+//   yellow.style.top = posYellow + value * 1 + "px";
+// });
 
 // window.addEventListener("scroll", function() {
 //     const distance = window.scrollY;
@@ -102,24 +93,24 @@ window.addEventListener("scroll", function () {
 
 
 //scroll to top, fade in when scroll is 100 px before the end of the page
-$(document).ready(function(){
-	$(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if ($(this).scrollTop() > $(document).height() - $(window).height() - 100) {
-        $('#back-to-top').stop().fadeTo(50,1);
+// $(document).ready(function(){
+// 	$(window).scroll(function () {
+//         var scroll = $(window).scrollTop();
+//         if ($(this).scrollTop() > $(document).height() - $(window).height() - 100) {
+//         $('#back-to-top').stop().fadeTo(50,1);
 
-			} else { //when scroll is <window-height - 100 disappear
-        $('#back-to-top').stop().fadeTo(50,0);
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 200);
-			return false;
-		});
-});
+// 			} else { //when scroll is <window-height - 100 disappear
+//         $('#back-to-top').stop().fadeTo(50,0);
+// 			}
+// 		});
+// 		// scroll body to 0px on click
+// 		$('#back-to-top').click(function () {
+// 			$('body,html').animate({
+// 				scrollTop: 0
+// 			}, 200);
+// 			return false;
+// 		});
+// });
 
 // var Scrollbar = window.Scrollbar;
 
