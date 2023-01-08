@@ -33,16 +33,20 @@ ScrollTrigger.refresh();
 gsap.to("#red", {
 
   scrollTrigger: {
-    trigger: "#red",
+    trigger: "#yellow",
     start: "top center",
-    end: "top 100px",
-    scrub:false, //when scrub 
+    end: "top -500px",
+    scrub:true,
     markers: true,
+    scroller: '.smooth-scroll',
   },
   
     y:600,
     ease:"none",
-    duration:5,
-    delay:2,
+    delay:1,
   }); //WORKING -> Animate CSS makes problem +  Locomotive scroll -> Scroll doesnt move 
 
+  ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
+
+  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+  ScrollTrigger.refresh();
