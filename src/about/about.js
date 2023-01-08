@@ -6,7 +6,7 @@ gsap.to("#red", {
     start: "top 45%",
     end: "+=1000",
     scrub: 10,
-    markers: true,
+    markers: false,
     scroller: ".smooth-scroll",
   },
 
