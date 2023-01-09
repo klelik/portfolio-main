@@ -70,16 +70,14 @@ console.log(dataBox);
 const showData = projectsData.map((project, index) => {
   return `
     <div 
-    class="box bg-white flex flex-col justify-center items-center gap-7  transform transition ease-in-out duration-500 hover:scale-110 animate__animated animate__animated animate__fadeIn delay-${
+    class="box bg-white flex flex-col justify-center items-center gap-7  transform transition ease-in-out duration-500 hover:scale-105 animate__animated animate__animated animate__fadeIn delay-${
       project.id + 1
     }"
   >
-  <div class="flex justify-center transform transition ease-in-out duration-1000 hover:scale-105 hover:rotate-[360deg]">
-    <img class="rounded-full object-cover h-[150px] w-[150px]" src="assets/${
+    <img class="imageTransition  h-[150px] w-[150px]" src="assets/${
       project.img
     }" alt="${project.title}" />
 
-  </div>
     <div class="info">
       <h3>${project.title}</h3>
     </div>
@@ -109,5 +107,4 @@ const showData = projectsData.map((project, index) => {
 });
 
 contentBox.innerHTML = showData.join("");
-console.log(window.scrollY
-  );
+console.log(window.scrollY);
