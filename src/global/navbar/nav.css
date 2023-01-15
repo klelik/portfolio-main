@@ -64,11 +64,11 @@
   }
   @media screen and (max-width: 600px) {
     /* need it for about -> add it on about css after */
-    body {
-        padding: 1rem;     
-      }
     .main-container {
         padding: 1rem;     
+      }
+      .wrapper{
+        padding: 0.5rem;
       }
     .topnav a:not(:first-child) {
       display: none;

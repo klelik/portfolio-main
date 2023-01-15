@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./about.css" type="text/css" />
+  <link rel="stylesheet" href="/src/global/footer/footer.css" type="text/css" />
   <link rel="stylesheet" href="/src/global/locomotive-scroll/locomotivescroll.css" type="text/css" />
   <link rel="stylesheet" href="/src/global/navbar/nav.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,11 +55,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <div >
     <section class="content"  >
         <article class="head">
-            <div class="parallax" >
-                <div class="animate__animated  animate__fadeIn delay-2" >
-                  <div class="circle " id="red" ></div>
+            <div class="parallax " >
+                <div class="" >
+                  <div class="circle animate__animated  animate__fadeIn delay-2" id="red" ></div>
                 </div>
-                <div class="circle-yellow animate__animated  animate__fadeIn delay-1" id="yellow" data-scroll data-scroll-speed="-2" data-scroll-delay="0.2" ></div>
+                <div class="circle-yellow animate__animated  animate__fadeIn delay-1" id="yellow" ></div>
            </div>
           </article>
         <div class="name animate__animated  animate__fadeIn delay-6" id="name"  data-scroll data-scroll-speed="1" data-scroll-delay="0.2">Klement's Space</div>
@@ -111,7 +112,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <section class=" "id="contact" >
 <div class="next" >
         <div class="lottie">
-          <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_abqysclq.json"  background="transparent"  speed="0.6"  style="max-width: 700px; height: 700px;"  loop  autoplay></lottie-player>
+          <lottie-player id="firstLottie" src="https://assets6.lottiefiles.com/packages/lf20_abqysclq.json"  background="transparent"  speed="0.6"  style="max-width: 700px; height: 700px;"></lottie-player>
         </div>
           <div id="container" id="trigger2">
   
@@ -143,19 +144,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               </form><!-- // End form -->
             </div><!-- // End #container -->
 </div>
-<a id="back-to-top" href="#" class="back-to-top" role="button"><i style="font-size: 2.5rem;" class="fas fa-angle-double-up animate__animated animate__fadeInUp"></i>
+<a id="back-to-top" href="#button" class="back-to-top" role="button" ><i style="font-size: 2.5rem;" class="fas fa-angle-double-up"></i>
 </a>
-
 </section>
-    
-   
-
         <!-- footer-->
-        <footer class="p-20 "  >
+        <footer class=""  >
             <div style="display: flex; justify-content: space-between; gap: 20px;">
              <a href="https://github.com/klelik" > <i class="fa-brands fa-github"></i> </a>
              <a href="https://www.linkedin.com/in/klement-lika-1253b855/" > <i class="fa-brands fa-linkedin"></i> </a>
-              <a href="#contact"  data-scroll-to><i class="fa-solid fa-envelope"></i></a>
+              <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
             </div>
             <p>Created by Klement</p>
         </footer>
@@ -165,8 +162,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--Jquery for scroll to top and fade in  -->
 <script language="JavaScript" type="text/javascript" src="/src/global/navbar/nav.js"></script>
 
-<!-- lottie -->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <!-- Social  -->
 <script src="https://kit.fontawesome.com/e0321efe7c.js" crossorigin="anonymous"></script>
 <!-- GSAP -->
@@ -176,7 +171,45 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <script  src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="/src/global/locomotive-scroll/locomotive-scroll.js"></script>
 <script language="JavaScript" type="text/javascript" src="about.js"></script>
+<!-- lottie -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.min.js"></script>
 
+<script>
+
+const bttBtn = document.getElementById("back-to-top");
+bttBtn.addEventListener(
+	"click",
+	function () {
+		locoScroll.scrollTo(0);
+	},
+	false
+);
+
+  // LottieInteractivity.create({
+  //     player: '#firstLottie',
+  //     mode: 'scroll',
+  //     actions: [
+  //         {
+  //             visibility:[0,1],
+  //             type: 'seek',
+  //             frames: [0, 300],
+  //         },
+  //     ]
+  // });
+  LottieInteractivity.create({
+    player: "#firstLottie",
+    mode:"play",
+    actions: [
+        {
+            visibility:[0, 1],
+            type: "loop",
+            frames: [70, 500]
+        }
+    ]
+});
+  </script>
 </body>
 </html>
 

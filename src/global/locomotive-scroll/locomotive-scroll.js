@@ -1,6 +1,9 @@
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".smooth-scroll"),
   smooth: true,
+  smartphone: {
+    smooth: true,
+ }
 });
 
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
@@ -26,3 +29,19 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
     ? "transform"
     : "fixed",
 });
+
+// let lottieAnim = lottie.loadAnimation({
+//   container: document.querySelector(".lottie"),
+//   renderer: "svg",
+//   loop: false,
+//   autoplay: false,
+//   path: "https://assets6.lottiefiles.com/packages/lf20_abqysclq.json"
+// });
+
+lot=document.getElementById("firstLottie");
+console.log(lot);
+scroll.on("scroll", (obj) => {
+  const vProgress = (obj.scroll.y / obj.limit.y) * 100;
+  lottieAnim.goToAndStop((vProgress * lottieAnim.totalFrames) / 100, true);
+});
+

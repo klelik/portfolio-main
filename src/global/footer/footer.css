@@ -1,0 +1,50 @@
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-top: 0.1rem solid #9e9e9e; */
+
+  }
+  
+  footer i {
+    color: #474544;
+    cursor: url(/src/global/global-assets/hover-cursor.png),
+      url(/src/global/global-assets/hover-cursor.png), pointer;
+    font-size: 3vw;
+    transition: 0.5s ease-in-out;
+  }
+  footer i:hover {
+    color: #ec8c60;
+  }
+  
+  /* go top */
+  .back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
+    text-decoration: none;
+    display: hidden;
+    color: #9e9e9e;
+  }
+  
+  /* CSS */
+  .back-to-top i {
+    animation: bounce 5s 1; /* referring directly to the animation's @keyframe declaration */
+    animation-delay: 5s;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .back-to-top i:hover {
+    /* animation: pulse 1s infinite;   referring directly to the animation's @keyframe declaration */
+    animation-delay: 0;
+    transform: scale(1.2) translateY(-5px);
+    color: #ec8c60;
+  }
+  /* */
+  
+
+  /* .smooth-scroll {
+    overflow-y: hidden !important;
+  }
+   */
