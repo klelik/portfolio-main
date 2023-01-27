@@ -3,9 +3,9 @@ const projectsData = [
     id: 1,
     title: "Weather Widget",
     description: "Shows weather and forecast in current or selected location",
-    img: "weather1.png",
+    img: "weather2.png",
     git: "https://github.com/klelik/weather-app",
-    deploy: "https://github.com/klelik/weather-app",
+    deploy: "https://klelik.github.io/weather-app/",
   },
   {
     id: 2,
