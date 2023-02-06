@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-html {
-}
+
 * {
   cursor: url(/src/global/global-assets/sketch-coursor-final.png), auto;
   font-family: "Merriweather", serif;
@@ -397,7 +396,7 @@ a:hover {
 /* Form Responsive */
 
 @media screen and (max-width: 1068px) {
-  #contact{
+  #contact {
     border: solid 2px #474544;
   }
   .lottie {
