@@ -1,3 +1,0 @@
-RewriteEngine on
-
-RewriteRule ^projects/?$ /src/projects/projects.html [L]

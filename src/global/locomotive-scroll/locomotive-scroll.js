@@ -38,10 +38,10 @@ ScrollTrigger.scrollerProxy(".smooth-scroll", {
 //   path: "https://assets6.lottiefiles.com/packages/lf20_abqysclq.json"
 // });
 
-lot=document.getElementById("firstLottie");
-console.log(lot);
-scroll.on("scroll", (obj) => {
-  const vProgress = (obj.scroll.y / obj.limit.y) * 100;
-  lottieAnim.goToAndStop((vProgress * lottieAnim.totalFrames) / 100, true);
-});
+// lot=document.getElementById("firstLottie");
+// console.log(lot);
+// scroll.on("scroll", (obj) => {
+//   const vProgress = (obj.scroll.y / obj.limit.y) * 100;
+//   lottieAnim.goToAndStop((vProgress * lottieAnim.totalFrames) / 100, true);
+// });
 
