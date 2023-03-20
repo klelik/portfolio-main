@@ -1,6 +1,14 @@
 const projectsData = [
   {
     id: 1,
+    title: "Travel Agency",
+    description: "Travel Agency webpage built in React using React Routes",
+    img: "travel-agency.png",
+    git: "https://github.com/klelik/travel-agency",
+    deploy: "https://klelik.github.io/travel-agency/",
+  },
+  {
+    id: 2,
     title: "Weather Widget",
     description: "Shows weather and forecast in current or selected location",
     img: "weather2.png",
@@ -8,7 +16,15 @@ const projectsData = [
     deploy: "https://klelik.github.io/weather-app/",
   },
   {
-    id: 2,
+    id: 3,
+    title: "Dog Birthday Calculator",
+    description: "Calculate the birthdays and age of your favourite companion",
+    img: "dog-calculator.png",
+    git: "https://github.com/klelik/dog-birthday-calculator",
+    deploy: "https://klelik.github.io/dog-birthday-calculator/",
+  },
+  {
+    id: 4,
     title: "Quote Machine",
     description: "Fetching and generating quotes from API, built in React",
     img: "quote.png",
@@ -17,7 +33,7 @@ const projectsData = [
     deploy: "https://klelik.github.io/quotte-machine/",
   },
   {
-    id: 3,
+    id: 5,
     title: "Birthday Reminder",
     description: "Birthday reminder tool, send wishes automatically ",
     img: "birthday.png",
@@ -26,7 +42,7 @@ const projectsData = [
     deploy: "https://klelik.github.io/birthday-reminder/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Personal Portfolio",
     description: "Current Personal Portfolio",
     img: "portfolio.png",
@@ -35,7 +51,7 @@ const projectsData = [
     deploy: "https://github.io/klelik/weather-app",
   },
   {
-    id: 5,
+    id: 7,
     title: "Airbnb Clone",
     description: "Clone of Airbnb main front page ",
     img: "airbnb.png",
@@ -44,7 +60,7 @@ const projectsData = [
     deploy: "https://klelik.github.io/airbnb-clone/",
   },
   {
-    id: 6,
+    id: 8,
     title: "Calculator",
     description: "Calculator in Vanilla Javascript",
     img: "calculator.png",
@@ -53,7 +69,7 @@ const projectsData = [
     deploy: "https://klelik.github.io/calculator/",
   },
   {
-    id: 7,
+    id: 9,
     title: "Pomodoro Timer",
     description: "A timer to manage your time, while studying",
     img: "pomodoro.png",
